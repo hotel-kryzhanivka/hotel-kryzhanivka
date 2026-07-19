@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Затишні кімнати подобово в Одесі (Крижанівка)</title>
+    <!-- Підключення Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Підключення іконок FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-amber-50/30 text-slate-800 font-sans">
+
+    <!-- Навігація / Шапка сайту -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-amber-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <span class="text-2xl">🏡</span>
+                <span class="font-bold text-xl tracking-tight text-slate-900">Затишок біля Моря</span>
+            </a>
+            <nav class="hidden md:flex gap-6 font-medium text-slate-600">
+                <a href="#about" class="hover:text-amber-600 transition">Про нас</a>
+                <a href="#rooms" class="hover:text-amber-600 transition">Кімнати та ціни</a>
+                <a href="#gallery" class="hover:text-amber-600 transition">Галерея</a>
+                <a href="#location" class="hover:text-amber-600 transition">Де ми знаходимося</a>
+            </nav>
+            <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-4 py-2 rounded-lg transition shadow-sm text-sm">
+                Забронювати
+            </a>
+        </div>
+    </header>
+
+    <!-- Головний екран -->
+    <section class="relative bg-slate-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-45 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="relative max-w-4xl mx-auto text-center px-4 py-24 md:py-32 flex flex-col items-center">
+            <span class="bg-amber-500/90 text-slate-950 font-bold text-xs uppercase tracking-wider px-3 py-1 rounded-full mb-4">Більше 10 років досвіду</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">Затишний відпочинок біля моря в Одесі</h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl">
+                Прості та комфортні кімнати подобово в Крижанівці. Всього 7 хвилин до безпечного відкритого пляжу!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#rooms" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 rounded-lg transition shadow-lg text-lg">
+                    Переглянути кімнати
+                </a>
+                <a href="#contact" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-6 py-3 rounded-lg transition text-lg">
+                    Зв'язатися з нами
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Переваги -->
+    <section id="about" class="py-16 md:py-24 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-3">Що ми пропонуємо для вашого відпочинку</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Усе, що потрібно для спокійного відпочинку від кухні до зручного ліжка. Відчуйте домашній затишок за розумну ціну.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-rose-50 border border-rose-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="text-rose-600 text-3xl mb-4">❤️‍🔥</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Наявність укриття</h3>
+                <p class="text-slate-700">Безпека понад усе. На території облаштовано надійне укриття для вашого спокою.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="text-amber-500 text-3xl mb-4">📶</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Безкоштовний Wi-Fi</h3>
+                <p class="text-slate-600">Швидкісний інтернет на всій території. Залишайтеся на зв'язку та діліться враженнями без обмежень!</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="text-amber-500 text-3xl mb-4">🅿️</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Паркомісце</h3>
+                <p class="text-slate-600">Для вашого автомобіля є власне паркомісце на закритій території під охороною.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="text-amber-500 text-3xl mb-4">🍢</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Зона барбекю</h3>
+                <p class="text-slate-600">Окрема зона мангалу. Шампури та решітка для соковитого шашлику вже чекають на вас!</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="text-amber-500 text-3xl mb-4">🌊</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Близько до моря</h3>
+                <p class="text-slate-600">Всього 7 хвилин прогулянки пішки до офіційно відкритого та безпечного пляжу.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="text-amber-500 text-3xl mb-4">🏡</div>
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Комфорт у кожній кімнаті</h3>
+                <p class="text-slate-600">Завжди свіжа та чиста постіль, рушники, теплі пледи й вентилятор. Гаряча вода (бойлер) та повна приватність від господарів.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Кімнати та Ціни -->
+    <section id="rooms" class="py-16 md:py-24 bg-amber-50/50">
+        
+        <!-- Блок цін -->
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="bg-amber-100/60 rounded-2xl p-6 md:p-8 border border-amber-200">
+                <h3 class="text-xl font-bold text-slate-950 mb-6 text-center">Ціни та особливі умови проживання:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    <div class="bg-white/80 p-4 rounded-xl shadow-sm">
+                        <span class="text-2xl">🧑</span>
+                        <h4 class="font-bold text-slate-900 mt-2">Доросла людина</h4>
+                        <p class="text-amber-700 font-bold text-lg mt-1">350 грн / ніч</p>
+                    </div>
+                    <div class="bg-white/80 p-4 rounded-xl shadow-sm">
+                        <span class="text-2xl">👶🏼</span>
+                        <h4 class="font-bold text-slate-900 mt-2">Діти до 3 років включно</h4>
+                        <p class="text-amber-700 font-bold text-lg mt-1">Безкоштовно!</p>
+                    </div>
+                    <div class="bg-white/80 p-4 rounded-xl shadow-sm">
+                        <span class="text-2xl">🧒🏻</span>
+                        <h4 class="font-bold text-slate-900 mt-2">Діти від 3 до 7 років</h4>
+                        <p class="text-amber-700 font-bold text-lg mt-1">300 грн / ніч</p>
+                    </div>
+                    <div class="bg-white/80 p-4 rounded-xl shadow-sm border border-amber-300">
+                        <span class="text-2xl">🪖</span>
+                        <h4 class="font-bold text-slate-900 mt-2">Військовослужбовці</h4>
+                        <p class="text-amber-700 font-bold text-lg mt-1">300 грн / ніч</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- КРАСИВА ВАЖЛИВА ІНФОРМАЦІЯ -->
+        <div class="max-w-4xl mx-auto px-4 mt-12 md:mt-16">
+            <div class="relative bg-white rounded-3xl p-6 md:p-10 border border-slate-200 shadow-xl overflow-hidden">
+                <!-- Декоративна лінія зверху -->
+                <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-amber-400 via-rose-400 to-amber-400"></div>
+                
+                <div class="text-center mb-8">
+                    <div class="inline-flex bg-amber-100 text-amber-600 w-12 h-12 rounded-full items-center justify-center text-xl mb-3 mx-auto">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">Важлива інформація</h3>
+                    <p class="text-slate-500 text-sm md:text-base">Будь ласка, ознайомтесь з умовами перед бронюванням</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <!-- Заселення -->
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 hover:border-sky-200 transition">
+                        <div class="w-12 h-12 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm text-sky-500 text-xl">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1">Заселення</h4>
+                            <p class="text-slate-600 text-sm">до 14:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Виселення -->
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-50 border border-slate-100 hover:border-sky-200 transition">
+                        <div class="w-12 h-12 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm text-sky-500 text-xl">
+                            <i class="fa-solid fa-door-open"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1">Виселення</h4>
+                            <p class="text-slate-600 text-sm">до 14:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Бронювання -->
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-amber-50 border border-amber-100 hover:border-amber-300 transition">
+                        <div class="w-12 h-12 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm text-amber-500 text-xl">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-amber-900 mb-1">Бронювання</h4>
+                            <p class="text-amber-800 text-sm">Вноситься передплата у розмірі вартості за одну ніч.</p>
+                        </div>
+                    </div>
+
+                    <!-- Скасування -->
+                    <div class="flex items-start gap-4 p-5 rounded-2xl bg-rose-50 border border-rose-100 hover:border-rose-300 transition">
+                        <div class="w-12 h-12 shrink-0 bg-white rounded-full flex items-center justify-center shadow-sm text-rose-500 text-xl">
+                            <i class="fa-solid fa-calendar-xmark"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-rose-900 mb-1">Скасування</h4>
+                            <p class="text-rose-800 text-sm">Передплата повертається <strong class="font-extrabold text-rose-950">тільки</strong> в разі попередження заздалегідь (за 3-5 днів).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Наші кімнати -->
+        <div class="max-w-6xl mx-auto px-4 mt-12 md:mt-16">
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-3">Наші кімнати</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Оберіть зручний варіант проживання для вашого літнього відпочинку.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Кімната на 2х -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                    <div class="relative w-full h-64 group slider-container bg-slate-100">
+                        <div class="slider-images w-full h-full relative">
+                            <img src="2-people-1.jpg" alt="Двомісна кімната 1" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500 z-10">
+                            <img src="2-people-2.jpg" alt="Двомісна кімната 2" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 z-0">
+                        </div>
+                        <button class="prev-btn absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                            <i class="fa-solid fa-chevron-left text-sm"></i>
+                        </button>
+                        <button class="next-btn absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                            <i class="fa-solid fa-chevron-right text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Двомісна кімната</h3>
+                        <p class="text-slate-500 text-sm">Затишна кімната, ідеальна для двох людей. Зручний простір для спокійного відпочинку.</p>
+                    </div>
+                </div>
+
+                <!-- Кімната на 3-4х (Тільки одна фотографія) -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                    <div class="relative w-full h-64 group slider-container bg-slate-100">
+                        <div class="slider-images w-full h-full relative">
+                            <!-- Видалили другу фотографію -->
+                            <img src="3-4-people-1.jpg" alt="Кімната на 3-4 людини" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500 z-10">
+                        </div>
+                        <button class="prev-btn absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                            <i class="fa-solid fa-chevron-left text-sm"></i>
+                        </button>
+                        <button class="next-btn absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                            <i class="fa-solid fa-chevron-right text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Кімната на 3-4 людини</h3>
+                        <p class="text-slate-500 text-sm">Простора кімната для комфортного відпочинку невеликою компанією або сім'єю.</p>
+                    </div>
+                </div>
+
+                <!-- Кімната на 4-5 осіб -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 flex flex-col">
+                    <div class="relative w-full h-64 group slider-container bg-slate-100">
+                        <div class="slider-images w-full h-full relative">
+                            <img src="4-5-people-2.jpg" alt="Кімната на 4-5 людей 1" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500 z-10">
+                            <img src="4-5-people-1.jpg" alt="Кімната на 4-5 людей 2" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 z-0">
+                        </div>
+                        <button class="prev-btn absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                            <i class="fa-solid fa-chevron-left text-sm"></i>
+                        </button>
+                        <button class="next-btn absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                            <i class="fa-solid fa-chevron-right text-sm"></i>
+                        </button>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Кімната на 4-5 людей</h3>
+                        <p class="text-slate-500 text-sm">Чудовий вибір для великої родини або компанії друзів. Максимум простору.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Фотогалерея -->
+    <section id="gallery" class="py-16 md:py-24 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-10 md:mb-12">
+            <h2 class="text-3xl font-bold text-slate-900 mb-3">Затишна атмосфера нашого будинку</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Подивіться на наші кімнати, кухню та територію для спокійного відпочинку.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            
+            <!-- 1. Зелене подвір'я та мангал -->
+            <div class="overflow-hidden rounded-xl shadow-sm border border-slate-200 bg-slate-100 flex flex-col">
+                <img src="outside.jpg" alt="Зелене подвір'я та мангал" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                <p class="p-3 bg-white text-sm font-semibold text-center text-slate-700 border-t border-slate-200">Зелене подвір'я та мангал</p>
+            </div>
+
+            <!-- 2. Коридор будинку -->
+            <div class="overflow-hidden rounded-xl shadow-sm border border-slate-200 bg-slate-100 flex flex-col">
+                <img src="coridor.jpg" alt="Коридор будинку" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                <p class="p-3 bg-white text-sm font-semibold text-center text-slate-700 border-t border-slate-200">Затишний і чистий коридор</p>
+            </div>
+            
+            <!-- 3. Спільна кухня -->
+            <div class="overflow-hidden rounded-xl shadow-sm border border-slate-200 bg-slate-100 flex flex-col">
+                <img src="kitchen.jpg" alt="Спільна кухня" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                <p class="p-3 bg-white text-sm font-semibold text-center text-slate-700 border-t border-slate-200">Кухня-їдальня з усім необхідним</p>
+            </div>
+            
+            <!-- 4. Затишні кімнати -->
+            <div class="overflow-hidden rounded-xl shadow-sm border border-slate-200 bg-slate-100 flex flex-col">
+                <img src="4-5-people-1.jpg" alt="Затишні кімнати" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                <p class="p-3 bg-white text-sm font-semibold text-center text-slate-700 border-t border-slate-200">Затишні кімнати</p>
+            </div>
+            
+            <!-- 5. Туалет та умивальник (Слайдер - змінено порядок картинок) -->
+            <div class="overflow-hidden rounded-xl shadow-sm border border-slate-200 bg-white flex flex-col">
+                <div class="relative w-full h-64 group slider-container bg-slate-100">
+                    <div class="slider-images w-full h-full relative">
+                        <!-- Умивальник тепер перший -->
+                        <img src="handwash.jpg" alt="Умивальник" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-500 z-10">
+                        <!-- Туалет тепер другий -->
+                        <img src="toilet.jpg" alt="Туалет" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 z-0">
+                    </div>
+                    <button class="prev-btn absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                        <i class="fa-solid fa-chevron-left text-sm"></i>
+                    </button>
+                    <button class="next-btn absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center z-20 opacity-0 group-hover:opacity-100 transition cursor-pointer">
+                        <i class="fa-solid fa-chevron-right text-sm"></i>
+                    </button>
+                </div>
+                <p class="p-3 bg-white text-sm font-semibold text-center text-slate-700 border-t border-slate-200">Умивальник та чистий туалет</p>
+            </div>
+            
+            <!-- 6. Душова -->
+            <div class="overflow-hidden rounded-xl shadow-sm border border-slate-200 bg-slate-100 flex flex-col">
+                <img src="shower.jpg" alt="Душова" class="w-full h-64 object-contain hover:scale-105 transition duration-300">
+                <p class="p-3 bg-white text-sm font-semibold text-center text-slate-700 border-t border-slate-200">Душова з гарячою водою</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Локація -->
+    <section id="location" class="py-16 md:py-24 bg-slate-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-2">Де ми знаходимося</h2>
+                <p class="text-slate-600 font-medium">📍 Одеса, Крижанівка, вулиця Семена Палія (перехрестя біля зупинки)</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 h-[350px] md:h-[450px]">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=30.7850%2C46.5600%2C30.7970%2C46.5720&amp;layer=mapnik&amp;marker=46.566182%2C30.791196" 
+                    style="border: 0;">
+                </iframe>
+            </div>
+
+            <!-- Збільшений та помітний блок про зупинку -->
+            <div class="mt-8 bg-amber-100/80 border border-amber-200 rounded-2xl p-6 text-center shadow-sm max-w-4xl mx-auto hover:shadow-md transition">
+                <p class="text-lg md:text-xl font-bold text-slate-800">
+                    <i class="fa-solid fa-bus-simple text-amber-600 mr-2"></i> Зупинка громадського транспорту знаходиться прямо біля дому. Лише 20 хвилин їзди до центру міста!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact" class="py-16 md:py-24 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Бажаєте забронювати кімнату?</h2>
+            <p class="text-slate-300 mb-8 max-w-xl mx-auto">Зв'яжіться з нами прямо зараз зручним для вас способом. Будемо раді бачити вас у гостях!</p>
+
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <a href="tel:+380680405704" class="flex items-center justify-center gap-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-4 rounded-xl transition text-lg shadow-lg">
+                    <i class="fa-solid fa-phone"></i> Подзвонити нам
+                </a>
+                
+                <a href="https://t.me/+380680405704" target="_blank" class="flex items-center justify-center gap-3 bg-sky-500 hover:bg-sky-600 text-white font-bold px-6 py-4 rounded-xl transition text-lg shadow-lg">
+                    <i class="fa-brands fa-telegram text-xl"></i> Написати в Telegram
+                </a>
+
+                <a href="viber://chat?number=380680405704" target="_blank" class="flex items-center justify-center gap-3 bg-indigo-500 hover:bg-indigo-600 text-white font-bold px-6 py-4 rounded-xl transition text-lg shadow-lg">
+                    <i class="fa-brands fa-viber text-xl"></i> Написати у Viber
+                </a>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 text-slate-400 text-sm">
+                <p class="mb-2">📍 Адреса: м. Одеса, с. Крижанівка, вул. Південна дорога,1</p>
+                <p>📞 Телефон для замовлень: +38 (068) 040-57-04</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Підвал -->
+    <footer class="bg-slate-950 text-slate-500 text-xs py-8 text-center border-t border-slate-900">
+        <p>&copy; 2026 Затишок біля Моря (Крижанівка). Усі права захищені.</p>
+    </footer>
+
+    <!-- JavaScript для роботи слайдерів -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sliders = document.querySelectorAll('.slider-container');
+            
+            sliders.forEach(slider => {
+                const images = slider.querySelectorAll('.slider-images img');
+                const prevBtn = slider.querySelector('.prev-btn');
+                const nextBtn = slider.querySelector('.next-btn');
+                
+                if (images.length <= 1) {
+                    if(prevBtn) prevBtn.style.display = 'none';
+                    if(nextBtn) nextBtn.style.display = 'none';
+                    return;
+                }
+
+                let currentIndex = 0;
+
+                function updateSlider(index) {
+                    images.forEach((img, i) => {
+                        if (i === index) {
+                            img.classList.remove('opacity-0', 'z-0');
+                            img.classList.add('opacity-100', 'z-10');
+                        } else {
+                            img.classList.remove('opacity-100', 'z-10');
+                            img.classList.add('opacity-0', 'z-0');
+                        }
+                    });
+                }
+
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+                    updateSlider(currentIndex);
+                });
+
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+                    updateSlider(currentIndex);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
